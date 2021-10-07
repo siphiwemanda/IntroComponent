@@ -35,9 +35,30 @@ function SignUpViewModel() {
 
     self.FirstName.subscribe(function (newValue) {
         console.log(newValue, "newValue")
+
     })
+
+    ko.validation.configure({
+        insertMessages: false,
+        decorateElement: true,
+        errorElementClass: 'error-element',
+        errorClass: 'error-element',
+        errorsAsTitle: true,
+        parseInputAttributes: false,
+        messagesOnModified: true,
+        decorateElementOnModified: true,
+        decorateInputElement: true
+    });
+
+    const data = [
+        self.name,
+        self.branch
+    ];
+
+    self.Errors = ko.validation.group(data);
+
+
     self.handleSubmit = function(){
-        let errors = ko.validation.group(self)
         if(errors().length >0){
             console.log("errors")
             errors.showAllMessages();
