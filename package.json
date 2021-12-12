@@ -1,0 +1,22 @@
+{
+  "name": "intro-component-with-signup-form-master",
+  "version": "1.0.0",
+  "description": "intro component with sign up form",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "node-sass SASS/style.scss CSS/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siphiwemanda/intro-component-with-signup-form-master--FrontEnd-Mentor-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siphiwemanda/intro-component-with-signup-form-master--FrontEnd-Mentor-/issues"
+  },
+  "homepage": "https://github.com/siphiwemanda/intro-component-with-signup-form-master--FrontEnd-Mentor-#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.0"
+  }
+}
