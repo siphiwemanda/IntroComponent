@@ -4,7 +4,7 @@
   "description": "intro component with sign up form",
   "main": "app.js",
   "scripts": {
-    "compile:sass": "node-sass SASS/style.scss CSS/style.css"
+    "compile:sass": "node-sass SASS/style.scss CSS/style.css -w"
   },
   "repository": {
     "type": "git",
